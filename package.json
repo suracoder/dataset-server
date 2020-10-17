@@ -1,0 +1,16 @@
+{
+  "name": "dataset-server",
+  "version": "1.0.0",
+  "description": "this app is use to insert  fake traffic accident data for data analysis  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "surafel worku",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5"
+  }
+}
