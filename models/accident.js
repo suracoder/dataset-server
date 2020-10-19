@@ -4,10 +4,8 @@
 
 module.exports = (sequelize, DataTypes) => {
   const accident = sequelize.define('accident', {
-    date: DataTypes.DATEONLY,
-    
- 
-    police_force:DataTypes.STRING,
+    date: DataTypes.DATE,
+     police_force:DataTypes.STRING,
     age_of_driver:DataTypes.INTEGER,
     sex_of_driver:DataTypes.STRING,
     vehicle_manoeuvre:DataTypes.STRING,
@@ -42,7 +40,12 @@ module.exports = (sequelize, DataTypes) => {
     action_taked:DataTypes.STRING,
     cause_of_accident:DataTypes.STRING,
     fatal_injury:DataTypes.INTEGER,
-    property_injury:DataTypes.FLOAT
+    property_injury:DataTypes.FLOAT,
+    age_of_vehicle:DataTypes.FLOAT,
+    cord_latitude:DataTypes.FLOAT,
+    cord_longitude:DataTypes.FLOAT,    
+    city:DataTypes.STRING
+  
   }, {});
   accident.associate = function(models) {
     // associations can be defined here
